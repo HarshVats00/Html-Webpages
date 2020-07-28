@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1 id="title"> Title </h1>
+</head>
+
+<body>
+    <p id="description"> Let's see if you have Covid-19 or not.</p>
+    <form id="survey-form">
+        <label id="name-label"> Name: </label><input type="text" id="name" placeholder="Name" required><br>
+        <br><label id="email-label"> Email: </label><input type="email" id="email" placeholder="Email-ID" required><br>
+        <br><label id="number-label"> Number: </label><input type="number" id="number" placeholder="Number" min="4"
+            max="10"><br>
+        <br><label for="male">Gender: <input id="male" value="male" type="radio" name="sex"> Male </label>
+        <label for="female"><input id="female" value="femle" type="radio" name="sex"> Female </label>
+        <label for="other"><input id="other" value="other" type="radio" name="sex"> Other </label><br>
+        <br><label for="fever"> Select the symptoms you observed </label><input type="checkbox" value="fever" id="fever"
+            name="symptoms"> Fever </label>
+        <label for="cold"><input type="checkbox" value="cold" id="cold" name="symptoms"> Cold and sour throat </label>
+        <label for="taste"><input type="checkbox" value="tatse" id="taste" name="symptoms"> Loss of taste and smell
+        </label><br>
+        <br> In Quantrine for: <select id="dropdown">
+            <option value="1" selected="selected">7 days</option>
+            <option value="2">14 Days</option>
+            <option value="3">21 days</option>
+        </select><br>
+        <br><textarea> Tell us how can we improve... </textarea><br>
+        <br><button id="submit" type="submit"> Submit </button>
+    </form>
+</body>
+
+</html>
